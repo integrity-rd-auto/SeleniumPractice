@@ -10,13 +10,9 @@ import Base.TestBase;
 public class CheckBoxPage extends TestBase {
 
 	@FindBy(xpath = "//h2/input[\"@type('checkbox')\"]")
-	public
-	static
-	WebElement Store_btn;
+	public	static	WebElement Store_btn;
 	@FindBy(xpath = "//h4[contains(text(),'Boxcutter')]/input")
-	public
-	static
-	WebElement BoxCutter_btn;
+	public	static	WebElement BoxCutter_btn;
 
 	public CheckBoxPage() {
 		PageFactory.initElements(driver, this);
