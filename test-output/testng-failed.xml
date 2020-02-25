@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.CheckBoxValidation">
+      <class name="TestCases.Test002">
         <methods>
-          <include name="validateStoreBtn"/>
-          <include name="setUp"/>
+          <include name="initialization"/>
+          <include name="clickFAQ"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- TestCases.CheckBoxValidation -->
+      </class> <!-- TestCases.Test002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

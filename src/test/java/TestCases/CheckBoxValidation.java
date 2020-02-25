@@ -1,5 +1,6 @@
 package TestCases;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -22,7 +23,7 @@ public class CheckBoxValidation extends TestBase {
 
 	@Test(priority = 1)
 	public void validateStoreBtn() {
-
+		
 		Assert.assertEquals(checkBoxPage.Store_btn.isSelected(), false);
 		checkBoxPage.clickStoreBtn();
 		Assert.assertEquals(checkBoxPage.Store_btn.isSelected(), true);
