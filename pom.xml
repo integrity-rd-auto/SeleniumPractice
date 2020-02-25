@@ -60,22 +60,32 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M4</version>
-				<configuration>
-					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.0.2</version>
 			</plugin>
 			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>3.1.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>${maven-release-plugin.version}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.0.0</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-					<fork>true</fork>
-					<executable>D:\java8\bin\javac</executable>
+					<sourcepath>${basedir}/integrity-ui-automation-pageobjects/src/main/java/com/ptc/integrity/automation/pageobjects/pages</sourcepath>
+					<tags>
+						<tag>
+							<name>nx.param</name>
+							<placement>a</placement>
+							<head>Require params</head>
+						</tag>
+					</tags>
 				</configuration>
 			</plugin>
 		</plugins>
