@@ -1,5 +1,3 @@
-// Author : Subhendu C
-
 package Base;
 
 import org.openqa.selenium.WebDriver;
@@ -11,7 +9,7 @@ public class TestBase {
 
 	public static WebDriver driver;
 
-	public static void initialization() {
+	public static final void initialization() {
 
 		// WebDriverManager.firefoxdriver().setup();
 		//WebDriverManager.chromedriver().setup();
